@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header') %>
+<body>
+<div class="dashboard-container">
+    <h1>Dashboard</h1>
+
+    <form id="qrForm" onsubmit="generateQRCode(); return false;">
+        <input type="text" id="qrContent" placeholder="Enter content for QR Code">
+        <button type="submit">Generate QR Code</button>
+    </form>
+
+    <div id="generatedQRCodes">
+    </div>
+
+</div>
+<%- include('../partials/footer') %>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
